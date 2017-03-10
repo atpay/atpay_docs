@@ -1,0 +1,23 @@
+  <ul id='main_nav'>
+
+  {% for resource in site.rest_resources %}
+    <li><a href="{{resource.url}}">{{resource.title}}</a></li>
+  {%endfor%}
+
+
+  <!-- {% assign groups = site.rest_resources | group_by: "resource" | sort: "name" %}
+  {% for group in groups %}
+    {% unless group.name == '' %}
+      <li>{{group.name | upcase}}
+        <ul>
+      {% for item in group.items %}
+          <li><a href="{{item.url}}">{{item.title}}</a></li>
+      {%endfor%}
+    </ul>
+    </li>
+    {% endunless %}
+  {%endfor%} -->
+
+
+
+  </ul>
