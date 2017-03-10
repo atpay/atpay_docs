@@ -1,6 +1,6 @@
 ---
 title: Retrieve Recurring Payments
-resource: recurring payment
+resource: recurring-payments
 description: Lists all Recurring Payment objects associated with Merchant.
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/recurring_payments

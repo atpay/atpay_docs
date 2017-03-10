@@ -1,11 +1,19 @@
   <ul id='main_nav'>
 
   {% for resource in site.rest_resources %}
-    <li><a href="{{resource.url | prepend: site.github.url}}">{{resource.title}}</a></li>
+    <li><a href="{{resource.url | prepend: site.github.url}}">{{resource.title}}</a>
+      <ul>
+        {% assign slug = {{resource.title | slugify}} %}
+        {% assign endpoints = site.rest_endpoints | where: "resource", slug  %}
+
+        {% for endpoint in endpoints %}
+            <li><a href="{{endpoint.url  | prepend: site.github.url}}">{{endpoint.title}}</a></li>
+        {%endfor%}
+      </ul>
   {%endfor%}
 
 
-  <!-- {% assign groups = site.rest_resources | group_by: "resource" | sort: "name" %}
+  <!-- {% assign groups = site.rest_endpoints | group_by: "resource" | sort: "name" %}
   {% for group in groups %}
     {% unless group.name == '' %}
       <li>{{group.name | upcase}}

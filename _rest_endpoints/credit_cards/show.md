@@ -1,6 +1,6 @@
 ---
 title: Retrieve a Credit Card
-resource: credit card
+resource: credit-cards
 description: Retrieves specific Credit Card object record
 type: GET
 endpoint: "https://api.atpay.com/api/v5/rest/credit_cards/{atpay_token}"

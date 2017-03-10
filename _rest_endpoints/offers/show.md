@@ -1,6 +1,6 @@
 ---
 title: Retrieve an Offer
-resource: offer
+resource: offers
 description: Retrieves specific Offer object record
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/offers/{{offer_id}}

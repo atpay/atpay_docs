@@ -1,6 +1,6 @@
 ---
 title: List all Credit Cards
-resource: credit card
+resource: credit-cards
 description: Lists all Credit Card objects associated with Merchant.
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/credit_cards

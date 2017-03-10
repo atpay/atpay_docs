@@ -1,6 +1,6 @@
 ---
 title: Create Transaction Refund
-resource: 'transaction refund'
+resource: transaction-refunds
 description: Refunds a previously processed Transaction.
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/transactions/refunds

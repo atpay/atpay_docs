@@ -1,6 +1,6 @@
 ---
 title: Retrieve a Merchant
-resource: merchant
+resource: merchants
 description: Retrieves specific Merchant object record
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/merchants/{{merchant_id}}

@@ -1,6 +1,6 @@
 ---
 title: Create a Gateway
-resource: gateway
+resource: gateways
 description: Creates a new Gateway record.
 type: POST
 endpoint: https://api.atpay.com/api/v5/rest/gateways

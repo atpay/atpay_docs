@@ -1,6 +1,7 @@
 ---
 title: Create a Marchant
 description: Creates a new Merchant record.
+resource: merchants
 type: POST
 endpoint: https://api.atpay.com/api/v5/rest/merchants
 layout: api_doc

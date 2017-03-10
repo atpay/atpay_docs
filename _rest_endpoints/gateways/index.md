@@ -1,6 +1,6 @@
 ---
 title: List all Gateways
-resource: gateway
+resource: gateways
 description: Lists all Gateway objects associated with Merchant.
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/gateways

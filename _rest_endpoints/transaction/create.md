@@ -1,6 +1,6 @@
 ---
 title: Create a Transaction
-resource: transaction
+resource: transactions
 description: Processes and creates a new Transaction record.
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/transactions

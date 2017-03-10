@@ -1,6 +1,6 @@
 ---
 title: Create an Offer
-resource: offer
+resource: offers
 description: Creates a new Offer record.
 type: POST
 endpoint: https://api.atpay.com/api/v5/rest/offers

@@ -1,6 +1,6 @@
 ---
 title: List all Transactions
-resource: transaction
+resource: transactions
 description: Lists all Transaction objects associated with Merchant.
 type: GET
 endpoint: https://api.atpay.com/api/v5/rest/transactions
