@@ -1,7 +1,7 @@
   <ul id='main_nav'>
 
   {% for resource in site.rest_resources %}
-    <li><a href="{{resource.url|  prepend: site.github.url}}">{{resource.title}}</a></li>
+    <li><a href="{{resource.url | prepend: site.github.url}}">{{resource.title}}</a></li>
   {%endfor%}
 
 
