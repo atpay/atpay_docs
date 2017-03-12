@@ -1,5 +1,5 @@
 ---
 title: Gateways
-application: atpay_core
+application: atpay core
 layout: api_doc
 ---

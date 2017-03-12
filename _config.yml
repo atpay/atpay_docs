@@ -35,3 +35,5 @@ collections:
     output: true
   rest_resources:
     output: true
+  rest_topics:
+    output: true

@@ -1,31 +1,42 @@
   <ul id='main_nav'>
 
-  {% for resource in site.rest_resources %}
-    <li><a href="{{resource.url | prepend: site.github.url}}">{{resource.title}}</a>
-      <ul>
-        {% assign slug = {{resource.title | slugify}} %}
-        {% assign endpoints = site.rest_endpoints | where: "resource", slug  %}
 
-        {% for endpoint in endpoints %}
-            <li><a href="{{endpoint.url  | prepend: site.github.url}}">{{endpoint.title}}</a></li>
+    <!-- TOPICS  -->
+
+        <li>TOPICS
+          <ul>
+        {% for topic in site.rest_topics %}
+        <!-- <li><a href="{{topic.url}}">{{topic.title}}</a></li> -->
+        <li><a href="{{topic.url | prepend: site.github.url}}">{{topic.title}}</a></li>
+
         {%endfor%}
       </ul>
-  {%endfor%}
+      </li>
 
 
-  <!-- {% assign groups = site.rest_endpoints | group_by: "resource" | sort: "name" %}
-  {% for group in groups %}
+  <!-- RESOURCES  -->
+
+  {% assign rest_groups = site.rest_resources | group_by: "application" | sort: "name" %}
+
+  {% for group in rest_groups %}
     {% unless group.name == '' %}
-      <li>{{group.name | upcase}}
+      <li>{{group.name | upcase}} RESOURCES
         <ul>
-      {% for item in group.items %}
-          <li><a href="{{item.url}}">{{item.title}}</a></li>
+      {% for resource in group.items %}
+      <li>{{resource.title}}
+        <ul style='display:;'>
+          {% assign slug = {{resource.title | slugify}} %}
+          {% assign endpoints = site.rest_endpoints | where: "resource", slug  %}
+
+          {% for endpoint in endpoints %}
+              <li><a href="{{endpoint.url  | prepend: site.github.url}}">{{endpoint.title}}</a></li>
+              <!-- <li><a href="{{endpoint.url}}">{{endpoint.title}}</a></li> -->
+          {%endfor%}
+        </ul></li>
+
       {%endfor%}
     </ul>
     </li>
     {% endunless %}
-  {%endfor%} -->
-
-
-
+  {%endfor%}
   </ul>
