@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    <h2>Description</h2>
+    {{page.description}}
+
+    {%if page.response_fields %}
+    <h2>Response Fields</h2>
+    <table>
+      <tr>
+        <th>Field</th>
+        <th>Description</th>
+        <th>Type</th>
+      </tr>
+      {% for item in page.response_fields %}
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.data_type}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+    {% endif %}
+
+    {{page.content}}
+  </div>
+</article>
