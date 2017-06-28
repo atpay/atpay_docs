@@ -6,7 +6,7 @@ layout: hook_doc
 
 ## Example Hook
 {% highlight json %}
-  details : 
+  details: 
   {
     "confirmation_token" : null,
     "type" : "success",
