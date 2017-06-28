@@ -6,7 +6,6 @@ layout: hook_doc
 
 ## Example Hook
 {% highlight json %}
-{
   details : 
   {
     "confirmation_token" : null,
@@ -62,5 +61,4 @@ layout: hook_doc
     "sms_info" : {}
   }
   signature: f4e7330899b505bbdba2315e9d5b9f695e4aecc7
-}
 {% endhighlight %}
