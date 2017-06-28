@@ -1,5 +1,5 @@
 ---
-title: Create a Marchant
+title: Create a Merchant
 description: Creates a new Merchant record.
 resource: merchants
 type: POST
