@@ -15,6 +15,8 @@ arguments:
       description: Dollar value of offer
       data_type: string
       required: true
+    - name: <custom>
+      description: Arbitrary custom arguments (e.g. "invoice_number") can be included, and they will returned with any associated web hook.
 layout: api_doc
 ---
 
