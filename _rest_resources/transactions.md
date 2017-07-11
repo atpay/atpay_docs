@@ -1,5 +1,5 @@
 ---
 title: Transactions
-application: atpay core
+application: "@Pay Core"
 layout: api_doc
 ---

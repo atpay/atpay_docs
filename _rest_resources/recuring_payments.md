@@ -1,5 +1,5 @@
 ---
 title: Recurring Payments
-application: atpay core
+application: "@Pay Core"
 layout: api_doc
 ---

@@ -1,5 +1,5 @@
 ---
 title: Credit Cards
-application: atpay core
+application: "@Pay Core"
 layout: api_doc
 ---
