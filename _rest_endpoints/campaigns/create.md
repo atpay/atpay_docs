@@ -3,7 +3,7 @@ title: Create a Campaign
 resource: campaigns
 description: Creates a new Campaign
 type: POST
-endpoint: https://api.atpay.com/api/v5/rest/campaigns
+endpoint: https://app.atpay.com/api/v5/campaigns
 arguments:
     - name: merchant_id
       description: Merchant ID of the Organization on which to create the Campaign.
@@ -18,7 +18,7 @@ layout: api_doc
 
 ## Example Request
 {% highlight bash %}
-curl https://api.atpay.com/api/v5/campaigns \
+curl https://app.atpay.com/api/v5/campaigns \
   -u key:secret \
   -d merchant_id=m_XXXXXXXXXXXXXXXXXXXXXX \
   -d campaign[title]="Campaign Title"

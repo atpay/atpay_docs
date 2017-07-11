@@ -3,7 +3,7 @@ title: Create an Organization
 resource: organizations
 description: Creates a new Organization.
 type: POST
-endpoint: https://api.atpay.com/api/v5/rest/organizations
+endpoint: https://app.atpay.com/api/v5/organizations
 arguments:
     - name: organization[details_attributes[name]]
       description: Name of the new Organization.
@@ -30,7 +30,7 @@ layout: api_doc
 
 ## Example Request
 {% highlight bash %}
-curl https://api.atpay.com/api/v5/organizations \
+curl https://app.atpay.com/api/v5/organizations \
   -u key:secret \
   -d organization[details_attributes[name]]="My Test Organization" \
   -d organization[users_attributes[0][email]]=user@email.com \

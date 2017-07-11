@@ -10,5 +10,5 @@ If you would like to request access to the API or feel as if your credentials ha
 
 ## Example Request
 {% highlight bash %}
-  $ curl https://api.atpay.com/api/v5/rest/transactions -u key:secret
+  $ curl https://app.atpay.com/api/v5/rest/transactions -u key:secret
 {% endhighlight %}
