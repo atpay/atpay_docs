@@ -29,6 +29,22 @@ layout: default
     </table>
     {% endif %}
 
+    {%if page.headers %}
+    <h2>Headers</h2>
+    <table>
+      <tr>
+        <th>Key</th>
+        <th>Value</th>
+      </tr>
+      {% for item in page.headers %}
+      <tr>
+        <td>{{item.key}}</td>
+        <td>{{item.value}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+    {% endif %}
+
     {{page.content}}
   </div>
 </article>
