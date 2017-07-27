@@ -27,6 +27,7 @@ curl https://app.atpay.com/api/v5/campaigns \
 ## Example Response
 {% highlight json %}
 {
-  "form_url" : "https://my-test-organization.atpy.it/campaign-title"
+  "form_url" : "https://my-test-organization.atpy.it/campaign-title",
+  "slug"     : "campaign-title"
 }
 {% endhighlight %}
