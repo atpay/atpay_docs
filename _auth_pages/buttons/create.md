@@ -1,6 +1,7 @@
 ---
 title: Create Buttons
-resource: buttons
+menu_title: Create
+heading: buttons
 description: Creates buttons.
 type: POST
 endpoint: https://api.atpay.com/api/v5/rest/offers
@@ -16,7 +17,7 @@ arguments:
 headers:
     - key: Content-Type
       value: application/json
-layout: api_doc
+layout: auth_api_doc
 ---
 
 ## Body

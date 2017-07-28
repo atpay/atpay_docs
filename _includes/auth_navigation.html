@@ -1,0 +1,19 @@
+  <ul id='main_nav'>
+  {% assign headings = site.auth_headings %}
+
+  {% for heading in headings %}
+    {% unless heading.name == '' %}
+      <li>{{heading.title}}
+        <ul style='display:;'>
+          {% assign slug = {{heading.title | slugify}} %}
+
+          {% assign pages = site.auth_pages | where: "heading", slug | sort: "order" %}
+
+          {% for page in pages %}
+              <li><a href="{{page.url}}">{{page.menu_title}}</a></li>
+          {%endfor%}
+        </ul>
+    </li>
+    {% endunless %}
+  {%endfor%}
+  </ul>

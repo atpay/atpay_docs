@@ -37,3 +37,7 @@ collections:
     output: true
   rest_topics:
     output: true
+  auth_headings:
+    output: true
+  auth_pages:
+    output: true
