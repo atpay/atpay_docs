@@ -4,7 +4,7 @@ layout: auth
 # How Instant Buttons Work On Your Site
 {: style="text-align: center"}
 
-![Instant Button Authentication flow diagram]({{ site.base_url }}/assets/img/diagram.jpg)
+![Instant Button Authentication flow diagram]({{ "/assets/img/diagram.jpg" | relative_url }})
 {: style="text-align: center"}
 
 ### You or your developers will need to create an app that does the following: 
