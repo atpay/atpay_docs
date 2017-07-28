@@ -1,19 +1,15 @@
+
   <ul id='main_nav'>
-  {% assign headings = site.auth_headings %}
-
-  {% for heading in headings %}
-    {% unless heading.name == '' %}
-      <li>{{heading.title}}
-        <ul style='display:;'>
-          {% assign slug = {{heading.title | slugify}} %}
-
-          {% assign pages = site.auth_pages | where: "heading", slug | sort: "order" %}
-
-          {% for page in pages %}
-              <li><a href="{{page.url}}">{{page.menu_title}}</a></li>
-          {%endfor%}
+    <li>Instant Button Auth
+      <ul> <li> <a href='{{ site.baseurl }}{% link instant_button_auth.md %}'> Quick Start</a> </li>
+      <li> <a href='{{ site.baseurl }}{% link _auth_pages/buttons/create.md %}'> Creating Buttons</a> </li>
+      <li> Web Hooks
+        <ul>
+          <li><a href='{{ site.baseurl }}{% link _auth_pages/web_hooks/successful.md %}'>Successful</a></li>
+          <li><a href='{{ site.baseurl }}{% link _auth_pages/web_hooks/unsuccessful.md %}'>Unsuccessful</a></li>
+          <li><a href='{{ site.baseurl }}{% link _auth_pages/web_hooks/email_mismatch.md %}'>Email Mismatch</a></li>
         </ul>
+      </li>
+    </ul>
     </li>
-    {% endunless %}
-  {%endfor%}
   </ul>

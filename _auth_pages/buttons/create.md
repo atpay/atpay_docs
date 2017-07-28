@@ -1,6 +1,6 @@
 ---
 title: Create Buttons
-menu_title: Create
+menu_title: Create Buttons
 heading: buttons
 description: Creates buttons.
 type: POST
@@ -45,7 +45,7 @@ The body consists of an array of one or more JSON objects (described below) each
 
 ## Example Request
 {% highlight bash %}
-curl -u key:secret \ 
+curl -u key:secret \
   -X POST \
   -H "Content-Type: application/json" \
   -d '[{"email":"patrickw@atpay", "invoice_number":"1001"}]' \
